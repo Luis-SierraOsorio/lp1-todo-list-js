@@ -6,6 +6,7 @@ html {
 body {
     font-size: 2rem;
     background-image: linear-gradient(to bottom right, rgb(169, 50, 169), rgb(29, 29, 124));
+    font-size: 1.6rem
 }
 
 /* overall container css */
@@ -37,6 +38,7 @@ body {
     background-color: transparent;
     padding: 1rem;
     padding-right: 10rem;
+    font-size: inherit;
 }
 
 .submit-button {
