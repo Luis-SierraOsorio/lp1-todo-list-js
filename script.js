@@ -1,4 +1,16 @@
 
+function saveData() {
+    const listContainer = document.querySelector('.todo-list-container')
+    console.log(listContainer);
+    // localStorage.setItem('data', listContainer.innerHTML);
+}
+
+function getData() {
+    const listContainer = document.querySelector('.todo-list-container')
+    // listContainer.innerHTML = localStorage.getItem('data');
+    console.log(listContainer);
+}
+
 
 // function to get all the new checkboxes and delete buttons
 function refresh() {
@@ -23,12 +35,14 @@ function refresh() {
             }
         })
     }
+    // saveData();
+
 }
 
 // initializing and setting event handlers to checklist and delete buttons
+// getData();
 refresh();
 deleteTask();
-
 
 // This function adds a new div to the lsit container
 function addTask() {
@@ -42,17 +56,18 @@ function addTask() {
 
     // adding the inner html of the div 
     taskDiv.innerHTML = `
-        <input type="checkbox" class="checkbox-btn">
-        <p class="task">${input.value}</p>
-        <div class="buttons-group">
-        <!-- <button class="btn edit-btn">EDIT</button> -->            
-        <button class="btn delete-btn" onclick="deleteTask()">DELETE</button>
-        `
+    <input type="checkbox" class="checkbox-btn">
+    <p class="task">${input.value}</p>
+    <div class="buttons-group">
+    <!-- <button class="btn edit-btn">EDIT</button> -->            
+    <button class="btn delete-btn" onclick="deleteTask()">DELETE</button>
+    `
 
     // appending to the selected div
     taskContainer.appendChild(taskDiv);
 
     // refreshing the page
+    // saveData();
     refresh();
     deleteTask();
 }
@@ -73,5 +88,6 @@ function deleteTask() {
         })
     }
 
+    // saveData();
     refresh();
 }
