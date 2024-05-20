@@ -16,7 +16,7 @@
         <!-- <h1>Todo List</h1> -->
         <div class="todo-input-container">
             <input type="text" id="input" class="input" placeholder="Add your task">
-            <button class="submit-button">ADD</button>
+            <button class="submit-button" onclick="addTask()">ADD</button>
             <!-- <p>Hello</p> -->
         </div>
         <div class="todo-list-container">
@@ -26,10 +26,11 @@
                     quam sunt.
                     Obcaecati</p>
                 <div class="buttons-group">
-                    <button class="btn edit-btn">EDIT</button>
-                    <button class="btn delete-btn">DELETE</button>
+                    <!-- <button class="btn edit-btn">EDIT</button> -->
+                    <button class="btn delete-btn" onclick="deleteTask()">DELETE</button>
                 </div>
             </div>
+
             <div class="individual-task">
                 <input type="checkbox" class="checkbox-btn" checked>
                 <p class="task checked">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non at quod
@@ -37,8 +38,8 @@
                     Obcaecati incidunt est debitis recusandae repellat. Repellendus magni quas maiores corporis, rerum
                     ad animi eius.</p>
                 <div class="buttons-group">
-                    <button class="btn edit-btn">EDIT</button>
-                    <button class="btn delete-btn">DELETE</button>
+                    <!-- <button class="btn edit-btn">EDIT</button> -->
+                    <button class="btn delete-btn" onclick="deleteTask()">DELETE</button>
                 </div>
             </div>
 
@@ -46,7 +47,7 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src=" script.js"></script>
 </body>
 
 </html>
