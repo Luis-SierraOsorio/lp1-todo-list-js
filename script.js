@@ -50,6 +50,10 @@ function addTask() {
     const taskContainer = document.querySelector(".todo-list-container");
     const input = document.querySelector(".input");
 
+    if (!input.value) {
+        return;
+    }
+
     // creating new div and setting attributes
     let taskDiv = document.createElement('div')
     taskDiv.setAttribute('class', 'individual-task');
@@ -65,6 +69,7 @@ function addTask() {
 
     // appending to the selected div
     taskContainer.appendChild(taskDiv);
+    input.value = ""
 
     // refreshing the page
     // saveData();
